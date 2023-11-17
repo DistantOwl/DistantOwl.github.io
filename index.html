@@ -1,145 +1,46 @@
-<!DOCTYPE html>
-<!--ethanhen saves the day-->
-<html lang="en">
-    <head>
-        
-        <meta charset="UTF-8">
-        <style>
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>testing</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-            html *{
-                font-family:'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;;
-            }
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+<style>
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid black;
+}
 
-            html,body{
-                height:100%;
-                display:flex;
-                flex-direction:column;
-            }
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+<body>
+	<div class="container">
+		<div class="center">
+	<p style="text-align: center; font-size: 20px">this is my testing site. if you're reading this, it means i'm not testing anything right now.</p>
+	<br>
+	<br>
+	<p style="text-align: center; font-size: 14px">admin@distantowl.com</p>
+</div>
+</div>
 
-            .header {
-                display:flex;
-                flex-direction:row;
-                justify-content:center;
-                align-items:center;
-            }
 
-            .header-image{
-                flex-basis:5%;
-            }
-
-            .header-title{
-                flex-basis:50%;
-            }
-
-            .footer{
-                display:flex;
-                flex-direction:row;
-                justify-content:center;
-                align-items:end;
-                flex-grow:1;
-            }
-            
-            .vertical{
-                display:flex;
-                flex-direction:row;
-                align-items:center;
-                display: block;
-                flex-grow:6;
-            }
-
-            .container{
-                display: flex;
-                justify-content: space-between;
-                flex-grow:1
-            }
-
-		    .bottom-z {
-			position:absolute;
-            width:100%;
-			z-index: 2;
-            flex-grow:1;
-			}
-
-            .button{
-                /*align-items:;*/
-                width:30%;
-                height:8%;
-                font-size:125%;
-                text-align:center;
-                margin:0 auto;
-                display:block;
-            }
-
-        </style>
-    </head>
-    <body style="background-color:black">
-
-        <div class="header">
-            <img class="header-image" src="./static/imgs/NASCAR1.png" width="166vh" height="115vh" >
-            <img class="header-title" src="./static/imgs/Racecars Logo.jpg" width="10%" height="350vh">
-            <img class="header-image" src="./static/imgs/NASCAR2.png" width="179vh" height="115vh" >
-        </div>
-
-        <div class="vertical">
-            <table style="width: 50%; height: 70%; margin-left: auto; margin-right: auto; text-align:center; background-color: #CBCBCB; border-collapse:separate;" border="25">
-                <tbody>
-                    <tr>
-                        <td>&nbsp;<font size="7vw"><a href="https://racecars.bandcamp.com/releases">bandcamp</a></font></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;<font size="7vw" color="red"><a href="https://open.spotify.com/artist/4TLLzD0CRpxXUUtSIcM1MY">spotify</a></font> </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;<font size="7vw"><a href="https://music.apple.com/us/artist/racecars/1633904237">apple music</a></font></td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;<font size="7vw"><a href="https://www.instagram.com/racecarsband/">instagram</a></font></td>
-                    </tr>
-                    <tr>    
-                        <td>&nbsp;<font size="7vw"><a href="https://twitter.com/racecarsband">twitter</a></font></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <button stlye="font-size:400%" onclick="setAudioState()" type="button" class="button">start/stop</button>
-
-        </div>
-
-            
-
-        
-
-        <div class="footer">
-            <img src="./static/imgs/flame.gif" width="100%" height="100%">
-            <div class="container bottom-z">
-                <div>
-                    <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
-                </div>
-                <div>
-                    <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
-                </div>
-                <div>
-                    <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
-                </div>
-                <div>
-                    <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
-                </div>
-                <div>
-                    <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
-                </div>
-                <div>
-                    <img src="./static/imgs/skull.gif" height="150vw" width="150vw">
-                </div>
-            </div>
-
-        </div>
-
-        <audio id="myAudio">
-            <source src="./audio/Aesthetic I Like.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-          </audio>
-
-        <script src="myscript.js"></script>
-
-    </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+	<script src="js/script.js"></script>
+</body>
 </html>
+
